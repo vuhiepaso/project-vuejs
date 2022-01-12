@@ -43,8 +43,11 @@
               placeholder="Search ..."
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+            <button
+              class="btn btn-outline-secondary buttonSearch"
+              type="submit"
+            >
+              <i class="fa fa-search">Search</i>
             </button>
           </form>
         </div>
@@ -58,11 +61,9 @@ export default {
   name: "navbar",
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .navbar-dark {
-  padding: 0 5px 0 5px;
+  padding: 10px 5px 10px 5px;
 }
 #logo {
   width: 30px;

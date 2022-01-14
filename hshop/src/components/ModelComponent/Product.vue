@@ -1,40 +1,42 @@
 <template>
-  <div id="product">
-    <div id="containerImg">
-      <img id="imgProduct" :src="imgs" alt="Product" />
-      <div id="saleOff">
-        <p>{{ promotion * 100 }}%</p>
+  <div id="container" @click="eventClick">
+    <div class="product" v-if="promotion == 0">
+      <div class="containerImg">
+        <img class="imgProduct" :src="imgs" alt="Product" />
       </div>
+      <h5>{{ nameProduct }}</h5>
+      <p>Price:{{ priceVND(price) }}</p>
+      <br />
     </div>
-    <br />
-    <h5>Bạn gái giá rẻ</h5>
-
-    <p id="priceOld">
-      Price:
-      <del>
-        {{ priceVND(price) }}
-      </del>
-    </p>
-    <p id="priceNew">
-      New price:
-      {{ priceVND(price - promotion * price) }}
-    </p>
+    <div class="product" v-else>
+      <div class="containerImg">
+        <img class="imgProduct" :src="imgs" alt="Product" />
+        <div id="saleOff">
+          <p>{{ promotion * 100 }}%</p>
+        </div>
+      </div>
+      <h5>{{ nameProduct }}</h5>
+      <p id="priceOld">
+        Price:
+        <del>
+          {{ priceVND(price) }}
+        </del>
+      </p>
+      <p id="priceNew">
+        New price:
+        {{ priceVND(price - promotion * price) }}
+      </p>
+    </div>
   </div>
 </template>
 <script>
 export default {
   name: "product",
-  Props: {
+  props: {
     imgs: String,
     price: Number,
     promotion: Number,
-  },
-  data() {
-    return {
-      imgs: "https://www.fashiongonerogue.com/wp-content/uploads/2020/12/Model-Shadow-Light-Fashion-Show-White-Shirt.jpg",
-      price: 500000,
-      promotion: 0.5,
-    };
+    nameProduct: String,
   },
   methods: {
     priceVND: (price) =>
@@ -42,23 +44,27 @@ export default {
         style: "currency",
         currency: "VND",
       }).format(price),
+    eventClick() {
+      this.$emit("eventClick");
+    },
   },
 };
 </script>
-
 <style scoped>
 * {
   margin: 0px;
 }
-#product {
-  /* background-color: blue; */
+#container {
+  background-color: blueviolet;
   width: 100%;
   max-width: 300px;
+}
+.product {
   height: auto;
   background-color: whitesmoke;
   padding-bottom: 20px;
 }
-#imgProduct {
+.imgProduct {
   width: 100%;
   max-width: 300px;
   height: 400px;
@@ -70,23 +76,38 @@ export default {
 }
 #priceNew {
   color: red;
-  /* font-weight: bold; */
   text-shadow: 2px 2px 5px #cc0000;
 }
-#containerImg {
+.containerImg {
   position: relative;
 }
 #saleOff {
   background-color: red;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   position: absolute;
-  top: 8px;
-  right: 16px;
+  top: 0px;
+  right: 10px;
 }
 #saleOff p {
   color: white;
-  height: 20px;
+  height: 25px;
   background-color: tomato;
+}
+@media only screen and (max-width: 1000px) {
+  .imgProduct {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .imgProduct {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .imgProduct {
+    height: 300px;
+    width: 240px;
+  }
 }
 </style>

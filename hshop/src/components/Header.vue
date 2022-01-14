@@ -63,6 +63,7 @@ export default {
       items: [],
     };
   },
+
   created() {
     axios
       .get(`https://jsonplaceholder.typicode.com/photos?_limit=5`)

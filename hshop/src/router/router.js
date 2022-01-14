@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from "../components/dashboard/Home.vue"
 import Product from "../components/dashboard/Products.vue"
 import Cart from "../components/dashboard/Cart.vue"
+import ProductDetails from "../components/dashboard/ProductDetails.vue"
 
 Vue.use(VueRouter)
 
@@ -12,5 +13,6 @@ export const router = new VueRouter({
         {path:'/' , component: Home},
         {path:'/product' , component: Product},
         {path:'/cart' , component: Cart},
+        {path:'/productdetails' , component: ProductDetails},
     ]
 })

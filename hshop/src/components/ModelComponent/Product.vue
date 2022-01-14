@@ -1,28 +1,31 @@
 <template>
-  <div id="container" @click="eventClick">
+  <div class="containerP" @click="eventClick">
     <div class="product" v-if="promotion == 0">
       <div class="containerImg">
         <img class="imgProduct" :src="imgs" alt="Product" />
       </div>
       <h5>{{ nameProduct }}</h5>
-      <p>Price:{{ priceVND(price) }}</p>
-      <br />
+      <p class="priceOld">Price</p>
+      <p>
+        {{ priceVND(price) }}
+      </p>
     </div>
     <div class="product" v-else>
       <div class="containerImg">
         <img class="imgProduct" :src="imgs" alt="Product" />
-        <div id="saleOff">
+        <div class="saleOff">
           <p>{{ promotion * 100 }}%</p>
         </div>
       </div>
       <h5>{{ nameProduct }}</h5>
-      <p id="priceOld">
+
+      <p class="priceOld">
         Price:
         <del>
           {{ priceVND(price) }}
         </del>
       </p>
-      <p id="priceNew">
+      <p class="priceNew">
         New price:
         {{ priceVND(price - promotion * price) }}
       </p>
@@ -51,10 +54,7 @@ export default {
 };
 </script>
 <style scoped>
-* {
-  margin: 0px;
-}
-#container {
+.containerP {
   background-color: blueviolet;
   width: 100%;
   max-width: 300px;
@@ -70,18 +70,18 @@ export default {
   height: 400px;
   object-fit: cover;
 }
-#priceOld {
+.priceOld {
   color: #000;
   font-size: 15px;
 }
-#priceNew {
+.priceNew {
   color: red;
   text-shadow: 2px 2px 5px #cc0000;
 }
 .containerImg {
   position: relative;
 }
-#saleOff {
+.saleOff {
   background-color: red;
   width: 35px;
   height: 35px;
@@ -89,7 +89,7 @@ export default {
   top: 0px;
   right: 10px;
 }
-#saleOff p {
+.saleOff p {
   color: white;
   height: 25px;
   background-color: tomato;
@@ -107,7 +107,7 @@ export default {
 @media only screen and (max-width: 300px) {
   .imgProduct {
     height: 300px;
-    width: 240px;
+    width: 100%;
   }
 }
 </style>

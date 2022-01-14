@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <router-link to="/" class="navbar-brand">
           Hshop
-          <img id="logo" src="../assets/logo.png" alt="logo" />
+          <img class="logo" src="../assets/logo.png" alt="logo" />
         </router-link>
 
         <button
@@ -65,11 +65,7 @@ export default {
 .navbar-dark {
   padding: 10px 5px 10px 5px;
 }
-#logo {
+.logo {
   width: 30px;
-}
-#navbarContainer {
-  /* height: 200px;
-  background-color: chartreuse; */
 }
 </style>

@@ -1,0 +1,94 @@
+{
+    "ProductData": [
+        {
+            "imgs": "https://www.fashiongonerogue.com/wp-content/uploads/2020/12/Model-Shadow-Light-Fashion-Show-White-Shirt.jpg",
+            "price": 500000,
+            "promotion": 0.1,
+            "nameProduct": "Kaki"
+        },
+        {
+            "imgs": "https://cdn.gumac.vn/image/01/thoi-trang/dam/shop-thoi-trang-phong-cach-co-dien270520201045135082.jpg",
+            "price": 1000000,
+            "promotion": 0.4,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0.6,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0.6,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0.6,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0.6,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0.6,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0.6,
+            "nameProduct": "Masuza"
+        },
+        {
+            "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
+            "price": 1000000,
+            "promotion": 0,
+            "nameProduct": "Masuza"
+        }
+    ]
+}

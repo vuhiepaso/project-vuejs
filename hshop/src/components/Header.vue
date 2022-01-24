@@ -7,7 +7,7 @@
     >
       <div class="carousel-indicators">
         <button
-          v-for="(item, index) in items"
+          v-for="(item, index) in item"
           :key="index"
           :class="index == 0 ? 'active' : null"
           type="button"
@@ -20,13 +20,14 @@
       <div class="carousel-inner">
         <div
           class="carousel-item"
-          v-for="(item, index) in items"
+          v-for="(item, index) in item"
           :key="index"
           :class="index == 0 ? 'active' : null"
         >
           <img :src="item.url" class="d-block w-100 imgHeader" alt="img" />
           <div class="carousel-caption d-none d-md-block bg-header">
-            <h5>{{ item.title }}</h5>
+            <h3>{{ item.title }}</h3>
+            <br />
             <p>{{ item.content }}</p>
           </div>
         </div>
@@ -54,25 +55,10 @@
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   name: "headers",
-  data() {
-    return {
-      items: [],
-    };
-  },
-
-  created() {
-    axios
-      .get(`https://jsonplaceholder.typicode.com/photos?_limit=5`)
-      .then((response) => {
-        this.items = response.data;
-      })
-      .catch((e) => {
-        this.errors.push(e);
-      });
+  props: {
+    item: Array,
   },
 };
 </script>
@@ -84,7 +70,18 @@ export default {
   height: 500px;
 }
 .bg-header {
-  background-image: linear-gradient(gray, rgba(128, 128, 128, 0.185));
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
+  color: white;
+  box-shadow: 1px 1px 5px white;
+}
+.bg-header h3 {
+  display: inline;
+  font-size: 50px;
+  font-weight: bold;
+}
+.bg-header p {
+  font-family: "Great Vibes";
+  font-size: 30px;
 }
 @media only screen and (max-width: 1000px) {
   .imgHeader {

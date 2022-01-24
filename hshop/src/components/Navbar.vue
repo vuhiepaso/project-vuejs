@@ -1,8 +1,8 @@
 <template>
   <div id="navbarContainer">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <router-link to="/" class="navbar-brand">
+        <router-link to="/" class="navbar-brand textSize">
           Hshop
           <img class="logo" src="../assets/logo.png" alt="logo" />
         </router-link>
@@ -43,6 +43,7 @@
               placeholder="Search ..."
               aria-label="Search"
             />
+            <!-- Create an Autocomplete Form sau dùng cái này để tìm kiếm-->
             <button
               class="btn btn-outline-secondary buttonSearch"
               type="submit"
@@ -67,5 +68,10 @@ export default {
 }
 .logo {
   width: 30px;
+}
+.textSize {
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px grey;
 }
 </style>

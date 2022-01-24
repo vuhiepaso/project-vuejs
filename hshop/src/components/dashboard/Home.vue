@@ -1,56 +1,75 @@
 <template>
   <div id="home">
-    <Header></Header>
+    <Header :item="ProductData.item" />
     <br />
-    <h2 class="title">New products</h2>
-    <div class="containerNewProducts">
-      <div class="containerHome">
+    <div class="container">
+      <h2 class="title">New products</h2>
+      <br />
+      <div class="containerRow rowProduct">
         <div
-          class="containerProduct"
-          v-for="(item, index) in ProductData"
+          class="containerColumn columnProduct"
+          v-for="(item, index) in ProductData.product.slice(0, count)"
           :key="index"
         >
-          <router-link to="/productdetails" class="nav-link">
-            <Product
-              v-if="index < count"
-              :promotion="item.promotion"
-              :imgs="item.imgs"
-              :price="item.price"
-              :nameProduct="item.nameProduct"
-              @eventClick="clickItem(index)"
-            />
-          </router-link>
+          <Product
+            :promotion="item.promotion"
+            :imgs="item.imgs"
+            :price="item.price"
+            :nameProduct="item.nameProduct"
+            :numberStars="item.numberStars"
+            :textContent="item.textContent"
+            @eventClick="clickItem(index)"
+          />
         </div>
       </div>
-      <h5 @click="count < ProductData.length ? (count += 4) : (seen = null)">
+
+      <span @click="count < ProductData.product.length ? (count += 4) : null">
         {{ seen }}
-      </h5>
+      </span>
+      <br />
+      <span @click="count > 5 ? (count -= 4) : null">{{ hide }}</span>
+
+      <br />
+      <br />
+      <h2 class="title">Main product list</h2>
+      <br />
+      <div class="containerRow">
+        <div
+          class="containerColumn columnCategory"
+          v-for="(item, index) in ProductData.productList"
+          :key="index"
+        >
+          <Category :src="item.img" :nameCategory="item.title" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
-
 <script>
 import Header from "../Header.vue";
 import Product from "../ModelComponent/Product.vue";
+import Category from "../ModelComponent/CategoryProduct.vue";
 import axios from "axios";
 export default {
   name: "Home",
   components: {
     Header,
     Product,
+    Category,
   },
   data() {
     return {
       count: 4,
-      seen: "<<See More>>",
+      seen: "See More",
+      hide: "Hide",
       ProductData: [],
     };
   },
   created() {
     axios
-      .get(`https://www.mockachino.com/fa690fa8-8b78-46/product`)
+      .get(`https://www.mockachino.com/54ff756f-010c-43/home`)
       .then((response) => {
-        this.ProductData = response.data.product;
+        this.ProductData = response.data;
       })
       .catch((e) => {
         this.errors.push(e);
@@ -58,6 +77,11 @@ export default {
   },
   methods: {
     clickItem(index) {
+      this.$router.push({
+        path: `/productdetails`,
+        query: { index },
+      });
+
       alert("hiep" + index);
     },
   },
@@ -68,37 +92,61 @@ export default {
 * {
   margin: auto;
 }
-.containerNewProducts {
-  max-width: 1485px;
-  /* background-color: darkcyan; */
+.container {
   margin: auto;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 15px 5px 15px 5px;
 }
-.containerHome:after {
+.containerRow:after {
   content: "";
   display: table;
   clear: both;
 }
-.containerProduct {
+.rowProduct {
+  max-width: 1200px;
+}
+.containerColumn {
   float: left;
-  width: 25%;
   padding: 10px;
+}
+.columnProduct {
+  width: 25%;
+}
+.columnCategory {
+  width: 33.33%;
+  height: 400px;
+  font-size: 28px;
 }
 .title {
   font-weight: bolder;
+  color: grey;
+  text-shadow: 1px 1px 3px grey;
 }
 @media only screen and (max-width: 1000px) {
-  .containerProduct {
+  .columnProduct {
     width: 33.33%;
+  }
+  .columnCategory {
+    height: 300px;
+    font-size: 2vw;
   }
 }
 @media only screen and (max-width: 800px) {
-  .containerProduct {
+  .columnProduct {
     width: 50%;
+  }
+  .columnCategory {
+    height: 200px;
+    font-size: 10px;
   }
 }
 @media only screen and (max-width: 450px) {
-  .containerProduct {
+  .columnProduct {
     width: 100%;
+  }
+  .columnCategory {
+    height: 100px;
   }
 }
 </style>

@@ -1,8 +1,13 @@
 <template>
   <div class="containerCategory">
-    <img class="imgCategory" :src="src" alt="abc" />
-    <div class="content">
-      <span>{{ nameCategory }}</span>
+    <!-- <img class="imgCategory" :src="src" alt="abc" /> -->
+    <div
+      class="imgCategory"
+      :style="{ 'background-image': 'url(' + src + ')' }"
+    >
+      <div class="content">
+        <span>{{ nameCategory }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -20,7 +25,6 @@ export default {
 
 <style scoped>
 .containerCategory {
-  position: relative;
   width: 100%;
   max-width: 400px;
   height: 100%;
@@ -28,29 +32,31 @@ export default {
 .imgCategory {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-size: cover;
   border-radius: 5%;
   box-shadow: 2px 2px 5px black;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 100%;
   background-color: rgba(128, 128, 128, 0.863);
-  padding: 10px 30px 10px 30px;
+  padding: 20px 0px 20px 0px;
   font-weight: bolder;
   color: white;
+  font-size: 3vw;
   opacity: 0;
-  display: inline;
 }
 .containerCategory:hover .content {
   opacity: 1;
 }
-@media only screen and (max-width: 500px) {
-  .containerCategory:hover .content {
-    opacity: 0;
+@media only screen and (max-width: 800px) {
+  .content {
+    opacity: 1;
+    padding: 5px 0px 5px 0px;
+    font-size: 2.5vw;
   }
 }
 </style>

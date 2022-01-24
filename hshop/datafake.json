@@ -1,94 +1,995 @@
 {
-    "ProductData": [
+    "productList": [
+        {
+            "img": "https://i.insider.com/54fdc12decad042920ceb0c8?width=800&format=jpeg",
+            "title": "Men's Fashion"
+        },
+        {
+            "img": "https://ae01.alicdn.com/kf/HTB1HTg4VhnaK1RjSZFtq6zC2VXaa/Free-Shipping-2019-new-Women-s-Summer-Fashion-Trends-Comfortable-Simple-Personality-Solid-ColorFashion-Set.jpg",
+            "title": "Women's Fashion"
+        },
+        {
+            "img": "https://image.made-in-china.com/44f3j00zvKtSnTySocw/Unisex-Custom-Fashion-Polo-Shirts-Breathable-Material-Casual-Wear-Men-Women-Polo-Shirts-Fashion-Shirts.jpg",
+            "title": "Fashionable men and women"
+        }
+    ],
+    "product": [
         {
             "imgs": "https://www.fashiongonerogue.com/wp-content/uploads/2020/12/Model-Shadow-Light-Fashion-Show-White-Shirt.jpg",
             "price": 500000,
             "promotion": 0.1,
-            "nameProduct": "Kaki"
+            "nameProduct": "Kaki",
+            "numberStars": 5,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://cdn.gumac.vn/image/01/thoi-trang/dam/shop-thoi-trang-phong-cach-co-dien270520201045135082.jpg",
             "price": 1000000,
             "promotion": 0.4,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 4,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 3,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0.6,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 4,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0.6,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 4,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 3,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0.6,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 5,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 2,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0.6,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 5,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 2,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 3,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0.6,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 5,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 5,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0.6,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 5,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "imgs": "https://afamilycdn.com/150157425591193600/2020/11/13/photo-1-16052488555091401606667-1605249001242-16052490014921200165747.jpg",
             "price": 1000000,
             "promotion": 0,
-            "nameProduct": "Masuza"
+            "nameProduct": "Masuza",
+            "numberStars": 5,
+            "textContent": "Noi dung mo ta cho san pham ben tren",
+            "color": [
+                {
+                    "name": "Xanh",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Đỏ",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Vàng",
+                    "url": "",
+                    "size": [
+                        {
+                            "name": "L",
+                            "quantily": 4
+                        },
+                        {
+                            "name": "Xl",
+                            "quantily": 5
+                        },
+                        {
+                            "name": "XXL",
+                            "quantily": 10
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "item": [
+        {
+            "url": "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbnxlbnwwfHwwfHw%3D&w=1000&q=80",
+            "title": "Fashion women",
+            "content": "Some representative placeholder content for the first slide."
+        },
+        {
+            "url": "https://assets.vogue.com/photos/60dcaf57f672b4dae269bd96/16:9/w_1280,c_limit/00_social.jpg",
+            "title": "Women's and men's fashion",
+            "content": "Some representative placeholder content for the second slide."
+        },
+        {
+            "url": "https://media.vogue.co.uk/photos/5e31584f71852d00086ffd48/16:9/w_2991,h_1682,c_limit/001-Street-Style-Menswear-Jan-2020-Vogue-credit-Jonathan-Daniel-Pryce.jpg",
+            "title": "Fashion men",
+            "content": "Some representative placeholder content for the third slide."
         }
     ]
 }

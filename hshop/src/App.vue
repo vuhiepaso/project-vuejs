@@ -2,6 +2,7 @@
   <div id="app">
     <Navbar />
     <router-view></router-view>
+    <br />
     <Footer />
   </div>
 </template>
@@ -22,7 +23,8 @@ export default {
   margin: 0px;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Big Shoulders Display", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

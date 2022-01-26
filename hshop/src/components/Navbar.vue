@@ -28,12 +28,12 @@
             <li class="nav-item">
               <router-link to="/product" class="nav-link">Products</router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/cart" class="nav-link">Cart</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/" class="nav-link">products</router-link>
-            </li>
+            </li> -->
           </ul>
 
           <form class="d-flex">

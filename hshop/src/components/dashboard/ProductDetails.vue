@@ -6,11 +6,9 @@
       <h2>Product Details</h2>
 
       <div class="detailsContainer">
-        <img
-          class="productcolumn imgProduct"
-          :src="ProductData.imgs"
-          alt="product"
-        />
+        <div class="productcolumn">
+          <img class="imgProduct" :src="ProductData.imgs" alt="product" />
+        </div>
         <div class="productcolumn columnContent">
           <h2 class="productName">{{ ProductData.nameProduct }}</h2>
           <p class="contentProduct">{{ ProductData.textContent }}</p>
@@ -50,10 +48,12 @@
           </div>
 
           <div>Size:</div>
+
           <div class="rowItem">
+            <!-- v-for="(size, index) in colors[indexColor].size" err -->
             <div
               class="boxItem columnItem"
-              v-for="(size, index) in colors[indexColor].size"
+              v-for="(size, index) in listSize(colors, indexColor)"
               :key="index"
               @click="(indexSize = index), (pty = size.quantily)"
               :class="index === indexSize ? 'action' : null"
@@ -93,6 +93,7 @@
         </div>
       </div>
     </div>
+    <br />
   </div>
 </template>
 
@@ -148,6 +149,13 @@ export default {
             this.count
         );
     },
+    listSize(colors, indexColor) {
+      try {
+        return colors[indexColor].size;
+      } catch (error) {
+        console.log(error);
+      }
+    },
   },
 };
 </script>
@@ -158,10 +166,15 @@ export default {
   clear: both;
   margin: auto;
   padding: 10px;
-  background-color: rgba(135, 207, 235, 0.473);
+  background-color: grey;
+  width: 100%;
+  max-width: 900px;
 }
 .imgProduct {
   object-fit: cover;
+  object-position: 80% 20%;
+  width: 100%;
+  height: 100%;
 }
 .productcolumn {
   float: left;
@@ -170,7 +183,7 @@ export default {
   /* chinh lai cai nay */
 }
 .columnContent {
-  background-color: rgba(255, 255, 255, 0.534);
+  background-color: rgba(255, 255, 255, 0.87);
   display: flex;
   justify-content: flex-end;
   text-align: left;
@@ -228,7 +241,7 @@ export default {
 }
 .boxItem:hover {
   color: white;
-  background-color: rgba(128, 128, 128, 0.548);
+  background-color: red;
 }
 .boxIcon {
   border: 0.1px solid grey;
@@ -240,7 +253,7 @@ export default {
 }
 .action {
   color: white;
-  background-color: rgba(128, 128, 128, 0.548);
+  background-color: red;
 }
 .divriceNew {
   font-size: 30px;

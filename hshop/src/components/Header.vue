@@ -67,6 +67,7 @@ export default {
 .imgHeader {
   width: auto;
   object-fit: cover;
+  object-position: 50% 1%;
   height: 500px;
 }
 .bg-header {

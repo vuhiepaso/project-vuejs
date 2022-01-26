@@ -1,10 +1,11 @@
 <template>
   <div>
     <h1>product</h1>
-    <li v-for="item in items" :key="item.name">
+    <li v-for="item in items" :key="item.numberA">
       <!-- {{ parentMessage }} - {{ index }} - {{ item.name }} -->
-      hiep
+      {{ item.numberA }}
     </li>
+    <span> {{ total }} </span>
   </div>
 </template>
 
@@ -13,8 +14,18 @@ export default {
   name: "product",
   data() {
     return {
-      items: [{ name: "Cà phê" }, { name: "Trà đặc" }, { name: "Bò húc" }],
+      items: [{ numberA: 1 }, { numberA: 2 }, { numberA: 3 }],
     };
+  },
+  computed: {
+    total() {
+      let total = this.items;
+      var a = 0;
+      for (const element of total) {
+        a += element.numberA;
+      }
+      return a;
+    },
   },
 };
 </script>

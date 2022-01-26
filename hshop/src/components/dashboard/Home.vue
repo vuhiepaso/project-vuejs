@@ -5,10 +5,12 @@
     <div class="container">
       <h2 class="title">New products</h2>
       <br />
+
       <div class="containerRow rowProduct">
+        <!-- v-for="(item, index) in ProductData.product.slice(0, count)" err  -->
         <div
           class="containerColumn columnProduct"
-          v-for="(item, index) in ProductData.product.slice(0, count)"
+          v-for="(item, index) in max(ProductData, count)"
           :key="index"
         >
           <Product
@@ -82,7 +84,15 @@ export default {
         query: { index },
       });
 
-      alert("hiep" + index);
+      // alert("hiep" + index);
+    },
+    max(ProductData, count) {
+      try {
+        const arr = ProductData.product.slice(0, count);
+        return arr;
+      } catch (error) {
+        console.log(error);
+      }
     },
   },
 };

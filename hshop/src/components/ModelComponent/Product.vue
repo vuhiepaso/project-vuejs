@@ -93,6 +93,7 @@ export default {
   /* max-width: 300px; */
   height: 380px;
   object-fit: cover;
+  object-position: 50% 10%;
   border-radius: 20px 20px 0 0;
 }
 .nameProduct {

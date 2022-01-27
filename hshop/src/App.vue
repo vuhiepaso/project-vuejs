@@ -7,7 +7,9 @@
     <div class="open">
       <router-link to="/cart">
         <button class="button">
-          <div class="tick">{{ tick }}</div>
+          <div class="tick" :class="tick == 0 ? 'tickNo' : null">
+            {{ tick }}
+          </div>
           <i class="fa fa-shopping-cart"></i>
         </button>
       </router-link>
@@ -91,5 +93,10 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* opacity: 1; */
+}
+.tickNo {
+  opacity: 0;
 }
 </style>

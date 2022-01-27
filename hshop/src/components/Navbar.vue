@@ -37,14 +37,21 @@
           </ul>
 
           <form class="d-flex">
-            <input
+            <!-- <input
               class="form-control me-2"
               type="search"
               placeholder="Search ..."
               aria-label="Search"
+              v-model="input"
+            /> -->
+            <Search
+              class="form-control me-2"
+              v-model="searchValue"
+              :items="dataArr"
             />
             <!-- Create an Autocomplete Form sau dùng cái này để tìm kiếm-->
             <button
+              @click="Search(searchValue)"
               class="btn btn-outline-secondary buttonSearch"
               type="submit"
             >
@@ -58,11 +65,41 @@
 </template>
 
 <script>
+import axios from "axios";
+import Search from "./smallFunctions/Search.vue";
 export default {
   name: "navbar",
+  components: {
+    Search,
+  },
+  data() {
+    return {
+      searchValue: "",
+      dataArr: [],
+    };
+  },
+  created() {
+    axios
+      .get(`https://www.mockachino.com/09bd4ab7-ce5a-47/search`)
+      .then((response) => {
+        this.dataArr = response.data.search;
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  },
+  methods: {
+    Search(searchValue) {
+      alert("Tim  kiem" + searchValue);
+    },
+  },
 };
 </script>
 <style scoped>
+.me-2 {
+  padding: 2px;
+  width: 200px;
+}
 .navbar-dark {
   padding: 10px 5px 10px 5px;
 }
